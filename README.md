@@ -81,15 +81,14 @@ dependencies {
 
 ```java
 // For complete examples and data files, please go to https://github.com/groupdocs-conversion-cloud/groupdocs-conversion-cloud-java-samples
-// Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-String MyAppKey = ""; 
-String MyAppSid = ""; 
-  
-Configuration configuration = new Configuration(MyAppSid, MyAppKey);
-  
-// Create API instance
+// Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
+String MyClientId = "";
+String MyClientSecret = "";
+
+// Create instance of the API
+Configuration configuration = new Configuration(MyClientId, MyClientSecret);
 ConvertApi apiInstance = new ConvertApi(configuration);
- 
+
 // Prepare convert settings
 ConvertSettings settings = new ConvertSettings();
 settings.setFilePath("WordProcessing/four-pages.docx");
@@ -104,6 +103,8 @@ watermark.setBackground(true);
  
 PdfConvertOptions convertOptions = new PdfConvertOptions();
 convertOptions.setWatermarkOptions(watermark);
+
+List<StoredConvertedResult> result = apiInstance.convertDocument(new ConvertDocumentRequest(settings));
 ```
 
 ## GroupDocs.Conversion Cloud SDKs in Popular Languages
