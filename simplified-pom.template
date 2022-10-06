@@ -27,14 +27,6 @@
             <organizationUrl>https://www.groupdocs.cloud</organizationUrl>
         </developer>
     </developers>
-
-    <repositories>
-        <repository>
-            <id>maven.groupdocs.cloud</id>
-            <name>maven.groupdocs.cloud</name>
-            <url>https://repository.groupdocs.cloud/repo/</url>
-        </repository>
-    </repositories>
         
     <dependencies>
         <dependency>
