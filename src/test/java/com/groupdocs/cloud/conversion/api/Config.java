@@ -7,5 +7,5 @@ public class Config {
      */
     public static String AppSID = "conversion.cloud";
     public static String AppKey = "conversion.cloud";
-    public static String ApiBaseUrl = "https://api-qa.groupdocs.cloud";
+    public static String ApiBaseUrl = "https://conversion.qa.groupdocs.cloud";
 }
