@@ -25,7 +25,7 @@ repositories {
 ...
 dependencies {
     ...
-    implementation 'com.groupdocs:groupdocs-conversion-cloud:25.3'
+    implementation 'com.groupdocs:groupdocs-conversion-cloud:25.4'
 }
 ```
 
